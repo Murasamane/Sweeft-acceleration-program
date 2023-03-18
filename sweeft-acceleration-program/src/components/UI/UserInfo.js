@@ -56,7 +56,9 @@ const UserInfo = () => {
   }, []);
 
   useEffect(() => {
-    setHistory(JSON.parse(localStorage.getItem("user__history")));
+    if(JSON.parse(localStorage.getItem("user__history"))){
+      setHistory(JSON.parse(localStorage.getItem("user__history")))
+    }
     return () => {
       return;
     };
