@@ -11,7 +11,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
-    "util": "^0.12.5",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -39,12 +40,7 @@
     ]
   },
   "devDependencies": {
-    "http-proxy-middleware": "^2.0.6"
-  },
-  "proxy": {
-    "/api": {
-      "target": "http://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com",
-      "changeOrigin": true
-    }
+    "http-proxy-middleware": "^2.0.6",
+    "webpack-cli": "^5.0.1"
   }
 }
